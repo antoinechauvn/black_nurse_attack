@@ -10,6 +10,9 @@ L'attaque consiste à envoyer des paquets Destination Unreachable vers une desti
 >À savoir, les attaques BlackNurse utilisent ICMP avec des paquets de type 3 Code 3.
 Il s'agit d'un paquet destiné à être envoyé lorsque le port d'une destination est inaccessible.
 
+![image](https://user-images.githubusercontent.com/83721477/148538600-da884d53-6080-4fce-a42f-49b148704374.png)
+
+
 >Contrairement aux attaques précédentes utilisant le protocole ICMP - Smurf Attack , Ping flood , Ping of death - BlackNurse n'inonde pas la destination de trafic. Au lieu de cela, les chercheurs ont réalisé que le paquet "Destination Port Unreachable" provoque une utilisation élevée du processeur dans le pare-feu qui le traite.
 
 >En utilisant une bande passante relativement faible de 15 à 18 Mbit/s, un attaquant peut provoquer une augmentation de l'utilisation du processeur dans un pare-feu cible, empêchant ce pare-feu de traiter davantage de demandes.
